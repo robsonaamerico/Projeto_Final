@@ -1,7 +1,16 @@
 **O objetivo é entender melhor a distribuição dos salários, a relação entre cargos e departamentos e os padrões de remuneração por região.**  
-1. Primeira consulta (query_01)  
+1. Query 1 — Salário por Departamento e Cargo  
+   Objetivo: analisar a distribuição de salários por departamento e cargo.
+   
    1.1 As colunas selecionadas foram traduzidas para facilitar a compreensão.  
-   1.2 Criado um LEFT JOIN da tabela HR.DEPARTMENTS pelo DEPARTMENT_ID para buscar os dados referente ao DEPARTMENT.  
-   1.3 Criado um LEFT JOIN da tabela HR.JOBS pelo JOB_ID para buscar os dados referentes ao JOB.  
-   1.4 Criado um filtro com WHERE para não exibir as linhas com dados nulos da coluna DEPARTMENT_NAME.  
-   1.5 A ordenação pelo ORDER BY foi feita para que os departamentos estejam em ordem alfabética e dentro de cada departamento os salários estejam em ordem descendente.  
+   1.2 Criados relacionamentos entre as tabelas com LEFT JOIN.  
+   1.3 Criado um filtro com WHERE para não exibir as linhas com dados nulos da coluna DEPARTMENTO.  
+   1.4 A ordenação pelo ORDER BY foi feita para que os DEPARTAMENTOS estejam em ordem alfabética e dentro de cada DEPARTAMENTO os SALÁRIOS estejam em ordem descendente.  
+
+2. Query 2 — Funcionários por Região (com localização)  
+   Objetivo: analisar salários e distribuição geográfica (Cidade, Estado ou País).  
+
+   2.1 As colunas selecionadas foram traduzidas para facilitar a compreensão.  
+   2.2 Criados relacionamentos entre as tabelas com LEFT JOIN.  
+   2.3 Criado um filtro com WHERE para não exibir as linhas com dados nulos da coluna DEPARTAMENTO.  
+   2.4 A ordenação pelo ORDER BY foi feita para que os CONTINENTES, PAÍSES, ESTADO e CIDADE estejam em ordem alfabética e dentro de cada DEPARTAMENTO os SALÁRIOS estejam em ordem descendente. 
