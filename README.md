@@ -1,15 +1,17 @@
 ```markdown
+Nome do aluno: Robson de Almeida Américo
+Turma: Visualização de Dados e Business Inteligence T2
+
 # 📊 Projeto Final - Análise de Dados de Recursos Humanos (HR)
 
-Este projeto foi desenvolvido com o objetivo de analisar a estrutura interna de uma empresa utilizando dados de Recursos Humanos (HR). O foco está em compreender a distribuição salarial, a relação de cargos em cada departamento e a distribuição geográfica global dos colaboradores.
+Este projeto foi desenvolvido com o objetivo de analisar a estrutura interna de uma empresa utilizando dados de Recursos Humanos (HR).
+O foco está em compreender a distribuição salarial, a relação de cargos em cada departamento e a distribuição geográfica global dos colaboradores.
 
 ---
 
 ## 🛠️ Tecnologias e Ferramentas
 
 * **Hospedagem / Servidor:** [FreeSQL](https://freesql.com) *(plataforma online utilizada para hospedar e disponibilizar o banco de dados gratuitamente)*
-* **SGBD:** Oracle SQL / PostgreSQL *(Compatível com o clássico schema HR)*
-* **Ferramenta de Consulta:** DBeaver / SQL Developer
 * **Linguagem:** SQL (Structured Query Language)
 
 ---
@@ -97,3 +99,17 @@ ORDER BY
     l.STATE_PROVINCE ASC,
     l.CITY ASC,
     e.SALARY DESC;
+
+Análises encontradas:
+1. A maior média salárial são do departamento Executive.
+2. A menor média salarial pertence ao departemento Shipping.
+2. Os departamentos que apresentam os menores desvios de média salarial são: Administration, Human Resources e Public Relations.
+3. O departamento Shipping possui mais Outliers de dados salarial.
+5. O departamento Executive tem a maior média de salário. Se observarmos a segunda e terceira colocada, temos uma diferença de praticamente o dobro da méida salarial.
+
+Como executar o projeto:
+O projeto foi construído em arquivo Jupyter Notebook (.ipynb), usando a plataforma VSCODE com a versão do Pyton 3.14 instalada.
+
+Sugestão de melhorias para as futuras verões:
+Utilizar um maior cruzamento de informações para encontrar possíveis correlações e diferenças nos dados utilizando as localidades.
+ 
